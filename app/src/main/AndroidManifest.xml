@@ -13,7 +13,14 @@
         android:theme="@style/Theme.GropyPUCP"
         tools:targetApi="31">
         <activity
-            android:name=".ListaClasesProfesorActivity"
+            android:name=".Profesor.ListaEstudiantesProfesorActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Profesor.ListaClasesProfesorActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
