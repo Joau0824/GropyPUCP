@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- rectangle_26 from your XD file. -->
+<!-- rectangle_22 from your XD file. -->
 <shape xmlns:android="http://schemas.android.com/apk/res/android"
 	android:shape="rectangle" >
 	<corners android:radius="10dp" />
-	<stroke android:color="#f5f5dc" android:width="3dp" />
-	<solid android:color="#FFFFFF" />
+	<stroke android:color="#aaffcc" android:width="3dp" />
+	<solid android:color="#3E704C" />
 </shape>
 
