@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "723329063084",
+    "project_id": "gropy-fa636",
+    "storage_bucket": "gropy-fa636.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:723329063084:android:4b3c0e037d83f47362a709",
+        "android_client_info": {
+          "package_name": "com.example.gropypucp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "723329063084-94sr99a04i65o9kl8qcgqljbes74a9fe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwkQBNRMOpFSHibZMnKo6CRaPVhpMAl3o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "723329063084-94sr99a04i65o9kl8qcgqljbes74a9fe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

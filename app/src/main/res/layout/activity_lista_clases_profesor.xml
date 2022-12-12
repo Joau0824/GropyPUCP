@@ -7,168 +7,64 @@
     android:background="#3E704C"
     tools:context=".Profesor.ListaClasesProfesorActivity">
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerLista"
+        android:layout_width="310dp"
+        android:layout_height="369dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchView"
+        app:layout_constraintVertical_bias="0.244" />
+
     <TextView
-        android:id="@+id/textView14"
+        android:id="@+id/textView30"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="GROPY PUCP"
         android:textColor="#FFFFFF"
         android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView11"
+        app:layout_constraintEnd_toStartOf="@+id/imageView11"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView11" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Lista de Clases"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView30"
+        app:layout_constraintHorizontal_bias="0.397"
+        app:layout_constraintStart_toStartOf="@+id/textView30"
+        app:layout_constraintTop_toBottomOf="@+id/textView30" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.902"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.058"
+        app:srcCompat="@drawable/rectangle_12" />
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="359dp"
+        android:layout_height="49dp"
+        android:background="@drawable/rectangle_26_shape"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.064" />
+        app:layout_constraintVertical_bias="0.272">
 
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        app:layout_constraintEnd_toEndOf="@+id/textView14"
-        app:layout_constraintHorizontal_bias="0.488"
-        app:layout_constraintStart_toStartOf="@+id/textView14"
-        app:layout_constraintTop_toBottomOf="@+id/textView14"
-        app:srcCompat="@drawable/rectangle_12" />
-
-    <TextView
-        android:id="@+id/textView21"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="Nueva Clase"
-        android:textColor="#FFFFFF"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="@+id/imageView7"
-        app:layout_constraintHorizontal_bias="0.483"
-        app:layout_constraintStart_toStartOf="@+id/imageView7"
-        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName4"
-        android:layout_width="278dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="24dp"
-        android:background="@drawable/rectangle_27_shape"
-        android:drawableStart="@drawable/ic_baseline_create_24"
-        android:drawablePadding="8dp"
-        android:ems="10"
-        android:hint="Nombre de la clase"
-        android:inputType="textPersonName"
-        android:paddingStart="10dp"
-        android:textColor="#FFFFFF"
-        android:textColorHint="#FFFFFF"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="@+id/textView21"
-        app:layout_constraintHorizontal_bias="0.503"
-        app:layout_constraintStart_toStartOf="@+id/textView21"
-        app:layout_constraintTop_toBottomOf="@+id/textView21" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName5"
-        android:layout_width="278dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="16dp"
-        android:background="@drawable/rectangle_27_shape"
-        android:drawableStart="@drawable/ic_baseline_create_24"
-        android:drawablePadding="8dp"
-        android:ems="10"
-        android:hint="Nombre del proyecto a trabajar"
-        android:inputType="textPersonName"
-        android:paddingStart="10dp"
-        android:textColor="#FFFFFF"
-        android:textColorHint="#FFFFFF"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName4"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName4"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName6"
-        android:layout_width="278dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="16dp"
-        android:background="@drawable/rectangle_27_shape"
-        android:drawableStart="@drawable/ic_baseline_create_24"
-        android:drawablePadding="8dp"
-        android:ems="10"
-        android:hint="Descripción del proyecto"
-        android:inputType="textPersonName"
-        android:paddingStart="10dp"
-        android:textColor="#FFFFFF"
-        android:textColorHint="#FFFFFF"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName5"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName5"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName5" />
-
-    <EditText
-        android:id="@+id/editTextNumber5"
-        android:layout_width="278dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="16dp"
-        android:background="@drawable/rectangle_27_shape"
-        android:drawableStart="@android:drawable/ic_menu_sort_by_size"
-        android:drawablePadding="8dp"
-        android:ems="10"
-        android:hint="Número de grupos"
-        android:inputType="number"
-        android:paddingStart="10dp"
-        android:textColor="#000000"
-        android:textColorHint="#FFFFFF"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName6"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName6"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName6" />
-
-    <EditText
-        android:id="@+id/editTextNumber6"
-        android:layout_width="278dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="16dp"
-        android:background="@drawable/rectangle_27_shape"
-        android:drawableStart="@android:drawable/ic_menu_sort_by_size"
-        android:drawablePadding="8dp"
-        android:ems="10"
-        android:hint="Numero de estudiantes por grupo"
-        android:inputType="number"
-        android:paddingStart="10dp"
-        android:textColor="#000000"
-        android:textColorHint="#FFFFFF"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="@+id/editTextNumber5"
-        app:layout_constraintStart_toStartOf="@+id/editTextNumber5"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber5" />
-
-    <EditText
-        android:id="@+id/editTextDate"
-        android:layout_width="278dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="16dp"
-        android:background="@drawable/rectangle_27_shape"
-        android:drawableStart="@android:drawable/ic_menu_agenda"
-        android:ems="10"
-        android:hint="Tiempo del proyecto"
-        android:inputType="date"
-        android:textColorHint="#FFFFFF"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="@+id/editTextNumber6"
-        app:layout_constraintHorizontal_bias="0.47"
-        app:layout_constraintStart_toStartOf="@+id/editTextNumber6"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber6" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="192dp"
-        android:layout_height="44dp"
-        android:layout_marginTop="28dp"
-        android:backgroundTint="#f5f5dc"
-        android:text="Crear"
-        android:textColor="#000000"
-        app:layout_constraintEnd_toEndOf="@+id/editTextDate"
-        app:layout_constraintStart_toStartOf="@+id/editTextDate"
-        app:layout_constraintTop_toBottomOf="@+id/editTextDate" />
-
+    </SearchView>
 </androidx.constraintlayout.widget.ConstraintLayout>
